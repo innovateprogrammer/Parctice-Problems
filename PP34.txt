@@ -1,0 +1,23 @@
+Name:- Aditya Gadre
+Solution for PP34
+
+
+INPUT:
+i=0
+def fo_r(list2):
+    global i
+    if(i<len(list2)-1):
+        if(list2[i]==list2[i+1]):
+            list2.pop(i)
+    else:
+        return list2
+    
+    i=i+1
+    return fo_r(list2)
+
+
+s=input("Enter a string")
+list2=[]
+for g in s:
+    list2.append(g)
+print(fo_r(list2))

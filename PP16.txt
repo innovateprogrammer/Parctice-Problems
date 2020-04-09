@@ -1,0 +1,23 @@
+Name:- Aditya Gadre
+Solution to PP16:
+
+
+INPUT:-
+def f1(ard,arra):
+    for g in arra:
+        if g not in ard:
+            ard.append(g)#apend only if not present ie avoids double
+    return ard
+arr1=[1,3,5]
+arr2=[1,3,9]
+arr3=[9,5]
+ar=[]
+h=[arr1,arr2,arr3]
+#storing in a 2d list
+for k in h:
+    
+    ar=f1(ar,k)
+    
+print(ar)
+#hence we get final list
+

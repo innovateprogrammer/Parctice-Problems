@@ -1,0 +1,27 @@
+Name: Aditya Gadre
+Solution for PP48:
+
+
+INPUT:
+s="a{d,c,b}e"
+l=[] #for seperating the strings
+l1=[]# for final answer
+s1=""
+a=0
+for i in s:
+    if(i=="{" or i=="}"):
+        l.insert(a,s1)
+        s1=""
+        a=a+1
+        continue
+    if(i==","):
+        continue
+        
+    s1+=i
+l.append(s1)
+#so mainly this list has three parts 1)prestring 2)array 3)post string so len varies=0,1,2
+ar=l[1]
+for x in ar:
+    z=l[0]+x+l[2]
+    l1.append(z)
+print(l1)

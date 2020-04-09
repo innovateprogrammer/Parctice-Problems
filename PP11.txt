@@ -1,0 +1,52 @@
+Name:- Aditya Gadre
+Solution: PP11
+
+
+INPUT:-
+lis1=[1,5,2,6,3,7]
+lis=[5,6,7,1,2,3]
+l=len(lis1)
+#sorting the list first
+while(l>0):
+    for i in range(0,l-1):
+        if(lis1[i]>lis1[i+1]):
+            t=lis1[i]
+            lis1[i]=lis1[i+1]
+            lis1[i+1]=t
+            
+    l=l-1
+
+null=0 # define a null character
+lis.append(null)
+lis4=[]
+lis5=[]
+#obtaining the two patterns 
+for j in range(0,len(lis)-1):
+    if(j==0):
+        lis4.append(lis[j])
+    elif(lis[j]==lis[j+1]-1):
+        lis4.append(lis[j])
+    else:
+        lis4.append(lis[j])
+        lis5.append(lis4)
+        lis4=[]
+        
+#storing the two patterns       
+p1=lis5[0]
+p2=lis5[1]
+s1=""
+s2=""
+s3=""
+for c in p1:
+    s1+=str(c)
+for d in p2:
+    s2+=str(d)
+for e in lis1:
+    s3+=str(e)
+if s1 in s3:
+    print(s1)
+elif s2 in s3:
+    print(s2)
+else:
+    print("No common subsequence found")
+

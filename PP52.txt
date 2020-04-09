@@ -1,0 +1,10 @@
+Name: Aditya Gadre
+Solution for PP52:
+
+
+INPUT:
+ab=[1,2,3,4,5,4,3,2,1]  #for eg
+for i in range(0,len(ab)-1):
+    if(ab[i]>ab[i+1]):
+        print("Peak Element = ",ab[i])
+        break

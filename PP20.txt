@@ -1,0 +1,11 @@
+Name:- Aditya Gadre
+Solution to PP20
+
+INPUT:
+x=[5,7,7,8,8,10]
+t=int(input("Enter the target value"))
+c=0
+for y in x:
+    if y==t:
+        c=c+1
+print(c)

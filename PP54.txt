@@ -1,0 +1,14 @@
+Name:- Aditya Gadre
+Solution for PP54:
+
+INPUT:
+arr1=[1,2,3,4,5,6] # array of unique elements
+c=0
+for z in range(0,len(arr1)):
+    for y in range(0,z):
+        for x in range(0,y):
+            for w in range(z,len(arr1)):
+                if((arr1[x]+arr1[y]+arr1[z])==arr1[w]):
+                    print(arr1[w])
+                    c+=1
+print(c)

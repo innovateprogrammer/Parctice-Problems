@@ -1,0 +1,27 @@
+s1=input("Enter a String :")
+s2=input("Enter Another String :")
+Name:- Aditya Gadre
+Practice Probem 2:- PP2
+
+
+INPUT:-
+s1=s1.lower()
+s2=s2.lower()
+if(len(s1)==len(s2)):
+    lis=[]
+    c=0
+    l=len(s1)
+    for r in s1:
+        lis.append(r)
+    for d in s2:
+        if d in lis:
+            c=c+1
+            continue
+        else:
+            break
+    if(c==l):
+        print("They are Anagram Strings")
+    else:
+        print("They are not anagram Strings")
+else:
+    print("Strings of Unequal length cannot be anagram")

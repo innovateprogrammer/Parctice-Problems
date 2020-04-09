@@ -1,0 +1,19 @@
+Name:-Aditya Gadre
+Practice Problem 1:
+
+INPUT:
+s=input("Enter a String : ")
+l=len(s)
+ch1=input("Enter the character to be replaced : ")
+ch2=input("Enter the character to replace the first one with : ")
+try:
+    s1=s.replace(ch1,ch2)
+    print(s1)
+except:
+    print("The given character does not occur in String")
+    
+OUTPUT:
+Enter a String : aditya
+Enter the character to be replaced : a
+Enter the character to replace the first one with : t
+tdityt

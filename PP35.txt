@@ -1,0 +1,28 @@
+Name: Aditya Gadre
+Solution for PP35
+
+
+
+INPUT:
+dic1={"Carl":70,"Alex":55,"Isla":40}
+list1=[["Carl",70],["Alex",55],["Isla",40]] #convert rawly dict into list
+#2d lists
+def updateEntry(name,score):
+    global list1
+    list2=[]
+    list2.append(name)
+    list2.append(score)
+    list1.append(list2)
+    print(list1)
+    #updated
+def getEntryfromRank(rank):
+    enty=list1[rank-1]
+    print(enty[0])
+    #name is obatined as per structure
+    
+
+    
+    
+print()
+updateEntry("Aditya",100)
+getEntryfromRank(4)    

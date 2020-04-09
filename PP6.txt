@@ -1,0 +1,29 @@
+Name:Aditya Gadre
+Solution:-PP6
+
+
+
+INPUT:
+st=input("Enter a string ")
+lis5=[]
+ch=""
+for i in range(0,len(st)):
+    if(st[i]!="."):
+
+        ch+=st[i]
+        if(i==len(st)-1):
+            print("hurry")
+            lis5.append(ch)
+    else:
+        lis5.append(ch)
+        ch=""
+
+
+lis5.reverse()
+st1=""
+for f in range(0,len(lis5)):
+    if(f!=len(lis5)-1):
+        st1+=lis5[f]+"."
+    else:
+        st1+=lis5[f]
+print(st1)

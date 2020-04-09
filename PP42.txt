@@ -1,0 +1,17 @@
+Name:- Aditya Gadre
+Solution for PP42:
+ 
+
+INPUT:
+arr1=[0,0,1,0,0] # for instance
+a=0 #simple for counting zeros
+b=0 #simple for count 1
+for i in arr1:
+    if(i==0):
+        a+=1
+    else:
+        b+=1 # as array contains only zeros or ones
+#LOgic
+#The length of the largest sub array containing equal amount of 0's and 1's will be twice the min count of a nd b
+r=min(a,b)
+print(r*2) # ie r number of 1 + r num of 0 hence mul by 2

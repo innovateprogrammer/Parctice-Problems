@@ -1,0 +1,26 @@
+Name: Aditya Gadre
+Solution for PP33
+
+INPUT:
+st=input("Enter a string")
+word=[]
+w=""
+for i in st:
+    if(i==" "):
+        
+        word.append(w)
+        w=""
+    
+    else:
+        w+=i
+else:
+    word.append(w)
+        
+print(word)
+min=len(word[0])
+wrd=word[0]
+for j in word:
+    if(len(j)<min):
+        min=len(j)
+        wrd=j
+print(wrd)        

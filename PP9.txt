@@ -1,0 +1,33 @@
+Name:- Aditya Gadre
+PP9:- Solution
+
+
+INPUT:-
+import random
+n=int(input("Enter the number of random integers required"))
+max=int(input("Enter the max limit"))
+lis1=[]
+for i in range(0,n):
+    r=random.randint(0,max)
+    # to avoid repeatition
+    if r not in lis1:
+        lis1.append(r)
+    else:
+        i=i-1
+        continue
+#sorting the given list
+t=0
+r=-1
+while(r<0):
+    for j in range(0,n-1):
+        if(lis1[j]>lis1[j+1]):
+            t=lis1[j]
+            lis1[j]=lis1[j+1]
+            lis1[j+1]=t
+    for h in range(0,n-1):
+        if(lis1[h]>lis1[h+1]):
+            break
+    else:
+        r=r+2
+            
+print(lis1)

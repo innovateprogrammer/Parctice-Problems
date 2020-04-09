@@ -1,0 +1,17 @@
+Name: Aditya Gadre
+Solution for PP56:
+
+
+INPUT:
+# initialize width
+w=1 #can change ifreq
+n=int(input("Enter the number of blocks"))
+arr=[]
+print("Enter height of each block")
+for i in range(0,n):
+    arr.append(int(input()))
+a=0
+for j in range(0,n):
+    h=arr[j]
+    a+=w*w*h
+print(a)

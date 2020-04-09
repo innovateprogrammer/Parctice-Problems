@@ -1,0 +1,32 @@
+Name: Aditya Gadre
+Solution for PP22:
+
+
+INPUT:
+s=input("Enter a string")
+w=""
+word=[]
+for i in range(0,len(s)):
+    
+    if(s[i]==" "):
+        word.append(w)
+        w=""
+    elif(i==len(s)-1):
+        w+=s[i]
+        word.append(w)
+    else:
+        w+=s[i]
+s1=""
+s2=""
+for a in word:
+    lis1=[]
+    for g in a:
+        lis1.append(g)
+    lis1.reverse()
+    for h in lis1:
+        s1+=h
+    s2=s2+s1+" "
+    s1=""
+    del(lis1)
+    
+print(s2)

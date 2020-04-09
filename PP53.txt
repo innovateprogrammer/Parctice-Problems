@@ -1,0 +1,21 @@
+Name: Aditya Gadre
+Solution for PP53:
+
+
+INPUT:
+n=int(input("Enter n"))
+print("Enter n intergers")
+arr=[]
+for i in range(0,n):
+    arr.append(int(input()))
+k=int(input("Enter the desired difference"))
+a=[]
+for x in arr:
+    for y in arr:
+        if(abs(x-y)==k):
+            if(x and y not in a):
+                a.append(x)
+                a.append(y)
+                #for saving values
+                print(x," ",end="")
+                print(y)

@@ -1,0 +1,26 @@
+Name:- Aditya Gadre
+Solution for PP18:
+
+
+INPUT:
+ads1=[]
+diff=[]
+ads=[2,5,6,7,8,8,9]
+for h in ads:
+    if h not in ads1:
+        ads1.append(h)
+#print(ads1)
+t=int(input("Enter the target number"))
+#now our focus should be on  ads1
+flag=0
+d=0
+for g in ads1:
+    d=t-g
+    if d<0:
+        flag=1#design a flag for negative integers
+    diff.append(abs(d))
+m=min(diff)
+if(flag==1):
+    print(t+m)
+else:
+    print(t-m)

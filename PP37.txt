@@ -1,0 +1,23 @@
+Nmae:- Aditya Gadre
+Solution for PP37
+
+INPUT:
+i=0
+def f6(lis1,k):
+    if(k<len(lis1)-1):
+        if(lis1[k]<=lis1[k+1]):
+            k=k+1
+            return f6(lis1,k)
+        else:
+            return False
+    else:
+        return True
+print("Enter the numbers")
+lis2=[]
+s=""
+while(s!="stop"):
+    s=input()
+    if(s!="stop"):
+        lis2.append(int(s))
+
+print(f6(lis2,i))

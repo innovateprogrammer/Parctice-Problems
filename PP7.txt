@@ -1,0 +1,31 @@
+Name:-Aditya Gadre
+PP7 Solution:-
+
+INPUT:-
+def search(s,c):
+    for r in range(0,len(s)):
+        if(s[r]==c):
+            return r
+
+lis1=[]
+f=0
+s1 = input("String 1 : ")
+s2 = input("String 2 : ")
+for t in range(0, len(s2)):
+    for j in s2:
+        lis1.append(j)
+    g=""
+    if (lis1[t]!= s1[t]):
+        ch = s1[t]
+        g=search(s2,ch)
+
+        lis1[g]=s2[t]
+        lis1[t]= s1[t]
+        f=f+1
+        s2=""
+        for i in lis1:
+            s2+=i
+
+    else:
+        continue
+print(f)

@@ -1,0 +1,24 @@
+Name:- Aditya Gadre
+Solution for PP29
+
+
+INPUT:
+print("Enter a array")
+s=""
+ar=[]
+flag=0
+while(s!="stop"):
+    s=input()
+    if(s=="stop"):
+        continue
+    else:
+        ar.append(int(s))
+for i in range(0,len(ar)-1):
+    if(ar[i]!=ar[i+1]-1):
+        flag=1
+        break
+if(flag==1):
+    print(ar[i]+1)
+else:
+    print("No missing integer")
+        

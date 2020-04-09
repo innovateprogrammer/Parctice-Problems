@@ -1,0 +1,26 @@
+Name: Aditya Gadre
+Solution for PP50
+
+INPUT:
+def wrd(f):
+    dic1={1:"A",2:"B",3:"C",4:"D",5:"E",6:"F",7:"G",8:"H",9:"I",10:"J",11:"K",12:"L",13:"M",14:"N",15:"O",16:"P",17:"Q",18:"R",19:"S",20:"T",21:"U",22:"V",23:"W",24:"X",25:"Y",26:"Z"} 
+    return dic1[f]
+n=123
+k=n
+#task1
+r=0
+
+l=len(str(n))
+while(n>=1):
+    r=n%10
+    n=n//10
+    print(wrd(r)+" ",end="")
+#task 2
+print()
+i=l-1 #initialize a counter
+g=k
+while(i>=1):
+    h=k%(10**i)
+    g=k//(10**i)
+    print(wrd(h)+" "+wrd(g))
+    i=i-1

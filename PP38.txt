@@ -1,0 +1,28 @@
+Name:-Aditya Gadre
+Solution for PP38
+
+
+
+INPUT:
+j=0
+#using recursion
+def f4(ar,k,n):
+        global j
+    
+        if(ar[k]==n):
+            j=k
+            
+        elif(k==len(ar)-1):
+            return j+1
+    
+        k=k+1
+            
+        j=f4(ar,k,n)
+        return j
+         
+    
+lis1=[16,77,65,45,77,28]
+m=77
+i=0
+l=f4(lis1,i,m)
+print(l)

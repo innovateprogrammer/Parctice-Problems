@@ -1,0 +1,33 @@
+Name: Aditya Gadre
+Practice Problem 4:- Solution PP4
+
+
+INPUT:-
+import string
+st=string.ascii_letters
+import random
+lis1=[]
+#get a string from user
+s=input("Enter a string  : ")
+for c in s:
+    lis1.append(c)
+f=int(input("Enter the location at which it is to be inserted  : "))
+#append a random character to the string at the specified location
+lis1.insert(f,random.choice(st))
+ch1=""
+stg=""
+x=0
+for g in lis1:
+    stg+=g
+#get the new appended string
+print(stg)
+#now we find the new appended character using the search technique
+for j in range(0,len(stg)):
+    if stg[j] in s:
+        continue
+    else:
+        ch1=stg[j]
+        x=x+1
+        break
+
+print("The inserted character is :%s"%ch1)

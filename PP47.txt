@@ -1,0 +1,13 @@
+Name:Aditya Gadre
+Solution for PP47:
+
+INPUT:
+s="ab"
+list1=[]
+for i in range(0,len(s)):
+    list1.append(s[i])
+    for j in range(i+1,len(s)):
+        x=s[i]+s[j]
+        list1.append(x)
+l=len(list1)
+print(list1[l-1]) # for the largest alphabetical order

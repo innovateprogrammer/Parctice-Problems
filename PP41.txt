@@ -1,0 +1,35 @@
+Name:- Aditya Gadre
+Solution for PP41:
+
+INPUT:
+nums=[-1,0,1,2,-1,4]
+mns=[] # final array after remove doubles
+for j in nums:
+      if j not in mns:
+            mns.append(j)
+
+#now mns is a sorted array this will help us
+l1=[]
+l2=[]
+l=len(nums)
+k=0
+for a in mns:
+    if a not in l1:
+        for b in mns:
+            if b not in l1:
+                for c in mns:
+                    if c not in l1:
+                        if((a+b+c)==0):
+                            if(k==0):
+                                l1.append(a)
+                                l1.append(b)
+                                l1.append(c)
+                                k=k+1
+                            elif(k==1):
+                                l2.append(a)
+                                l2.append(b)
+                                l2.append(c)
+                                k=k+1
+                            
+print(l1)
+print(l2)

@@ -1,0 +1,16 @@
+Name:- Aditya Gadre
+Solution for PP19:
+
+INPUT:
+#printing exciting sequence
+#define F(n)
+n=int(input("Enter the parameter n : "))
+f=1
+s=0
+for a in range(0,n):
+    p=1
+    for b in range(f,f+a+1):
+        p*=b
+    s+=p
+    f=f+a+1
+print("Sum :",s)

@@ -1,0 +1,43 @@
+Name:- Aditya Gadre
+Solution for PP12:-
+
+
+INPUT:-
+lis1=[]
+l=int(input("Enter the number of elements"))
+ch=0
+print(len(adi))
+i=0
+print("Enter the numbers")
+while(i<l):
+    
+        ch=input()
+        if(ch.isdigit()==False):
+            print("Please enter a valid integer not character")
+            print("Renter Integer")
+            continue
+        else:
+            i=i+1
+            lis1.append(ch)
+lis2=[]
+for j in lis1:
+    if j not in lis2:
+        lis2.append(j)
+h=len(lis2)
+lis3=[]
+c=0
+for k in range(0,h):
+    for g in range(0,l):
+        
+        if(lis1[g]==lis2[k]):
+            c=c+1
+            
+    lis3.append(c)
+    c=0
+z=0
+for a in range(0,len(lis3)):
+    if(lis3[a]==1):
+        z=a
+        break
+
+print("The Single Occurring Number is ",lis2[z])

@@ -1,0 +1,27 @@
+Name:- Aditya Gadre
+Solution for PP24:
+
+
+INPUT:
+n=int(input("Enter the number of Strings you want"))
+st=[]
+
+for i in range(0,n):
+    st.append(input())
+st1=st[0]
+min=len(st1)
+for k in st:
+    if(len(k)<min):
+        min=len(k)
+        st1=k
+g=""
+for h in range(0,min):
+    c=0
+    g+=st1[h]
+    for f in st:
+        if g in f:
+            c=c+1
+        
+        if(c==n):
+            fix=g
+print(fix)

@@ -1,0 +1,15 @@
+Name:- Aditya Gadre
+Solution to PP27:
+
+
+INPUT:
+arr1=[2,6,8,5,4,3]  #m=6
+arr2=[2,3,4,7]    #n=4
+arr3=[]
+#now writing the comparision algorithm
+
+for h in arr2:
+    for f in arr1:
+        if(f==h):
+            arr3.append(h)
+print("Intersection ",arr3)

@@ -1,0 +1,19 @@
+Name: Aditya Gadre
+Solution for PP17:
+
+INPUT:
+k=int(input("Enter the value of K"))
+arr=[1,2,3,4,5]
+l=len(arr)
+arrd=[]
+for j in range(0,k):
+    arrd.append(arr[j]) 
+    
+ar=[]
+for g in arr:
+    if g not in arrd:
+        ar.append(g)
+        
+arrd.reverse()
+arrd+=ar
+print(arrd)

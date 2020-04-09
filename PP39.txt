@@ -1,0 +1,16 @@
+Name: Aditya Gadre
+Solution for PP39
+
+INPUT:
+def f5(st):
+    if a in st:
+        st=st.replace(a,"3.14")
+        return st
+st=input("Enter the string")
+
+a="pi"
+st=f5(st)
+if(st!=None):
+    print(st)
+else:
+    print("Not present")

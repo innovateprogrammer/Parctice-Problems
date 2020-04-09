@@ -1,0 +1,34 @@
+Name: Aditya Gadre
+Solution for PP28:
+
+INPUT:
+a=[]
+st=""
+print("Enter elemens of the array")
+
+print()
+while(st!="stop"):
+    st=input()
+    if(st=="stop"):
+        continue
+    else:
+        a.append(int(st))
+#print(a)
+flag=0
+#hence we recieved the required array
+for i in range(0,len(a)):
+    s1=0
+    s2=0
+    #initialize for both sums
+    for x in range(0,i):
+        s1+=a[x]
+    for y in range(i+1,len(a)):
+        s2+=a[y]
+    if(s1==s2):
+        
+        flag=1
+        break
+if(flag==1):
+    print("Equilibrium position : ",i+1)
+else:
+    print("No Equilibrium position found")

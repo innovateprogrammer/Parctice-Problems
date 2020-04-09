@@ -1,0 +1,38 @@
+Name:- Aditya Gadre
+Solution for PP46:
+
+
+INPUT:
+nu=[-1,9,8,-3,4]
+s=5
+w=0
+l=[]
+for i in nu:
+    if i not in l:
+        for j in nu:
+                if(i+j==s or abs(i-j)==s):
+                    l.append(i)
+                    l.append(j)
+                    
+                    w=w+1
+                
+#thus by above algorithm we get required doublets
+l1=[]
+for a in nu:
+    if a not in l1:
+        
+        for b in nu:
+        
+                if(a!=b):
+                    for c in nu:
+                        
+                            if(b!=c):
+                                if((a+b+c)==s or abs(a+b-c)==s or abs(a-b-c)==s or abs(a-b+c)==s or (-a-b-c)==s or (-a-b+c)==s or (-a+b+c)==s or (-a+b-c)==s):
+                                    l1.append(a)
+                                    l1.append(b)
+                                    l1.append(c)
+                                    
+                                    w=w+1
+                            
+
+print(w)

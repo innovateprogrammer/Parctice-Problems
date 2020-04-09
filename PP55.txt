@@ -1,0 +1,28 @@
+Name: Aditya Gadre
+Solution for PP55
+
+INPUT:
+st=[]
+s=wd=""
+print("Enter string")
+
+
+s=input()
+for i in s:
+    if(i==" "):
+        st.append(wd)
+        wd=""
+    else:
+        wd+=i
+else:
+    st.append(wd)
+print(st)
+print("Enter the search two boundary words")
+s=""
+a=input()
+b=input()
+a1=st.index(a)
+b1=st.index(b)
+for j in st[a1:b1+1]:
+    s+=j+" "
+print(s)

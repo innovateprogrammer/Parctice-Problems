@@ -1,0 +1,18 @@
+Name: Aditya Gadre
+Solution for PP40
+
+INPUT:
+li=[["abc",12],["def",15],["ghi",10],...................................................,["xyz",100]]
+li1=[]# video
+li2=[]#views
+for f in li:
+    li1.append(f[0])
+    li2.append(f[1])
+l=len(li1)
+for x in range(0,l-1):
+    if(li2[x]<li2[x+1]):
+        t=li1[x]
+        li1[x]=li1[x+1]
+        li1[x+1]=t
+for i in range(0,10):
+    print(li1)

@@ -1,0 +1,27 @@
+Name:- Aditya Gadre
+PP5:- Solution 
+Find number of Zeros using Recursion
+
+INPUT:
+d=0
+def check(f):
+    global d
+    g = f % 10
+    f = int(f / 10)
+
+    if (f<10):
+        return d
+
+    else:
+
+        if(g==0):
+            d=d+1
+            return check(f)
+        else:
+            return check(f)
+
+
+n=int(input("Enter a number : "))
+
+print("The number contains %d"%check(n),"Zeros")
+

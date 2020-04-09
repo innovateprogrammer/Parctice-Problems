@@ -1,0 +1,24 @@
+Name: Aditya Gadre
+Solution for PP51:
+
+
+INPUT:
+# we can do this by using list
+def f10(l):
+    if("x" in l):
+        g=l.index("x")
+        del l[g]
+        return f10(l)
+    else:
+        return l
+    
+        
+d="ABxxxBcdgxxas"
+lt=[]
+for i in d:
+    lt.append(i)
+f=f10(lt)
+s1=""
+for j in f:
+    s1+=j
+print(s1)

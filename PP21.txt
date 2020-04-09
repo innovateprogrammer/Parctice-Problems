@@ -1,0 +1,16 @@
+Name:- Aditya Gadre
+Solution for PP21
+
+
+INPUT:
+dic1={1:"A",2:"B",3:"C",4:"D",5:"E",6:"F",7:"G",8:"H",26:"Z"}
+num=int(input("Enter the column number"))
+k=0
+if(num<=26):
+    print(dic1[num])
+else:
+    r=num//26
+    if(r==num/26):
+        r=r-1
+    k=num-(26*r)
+    print(dic1[r]+dic1[k])

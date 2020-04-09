@@ -1,0 +1,16 @@
+Name:- Aditya Gadre
+Solution for PP13:-
+
+
+
+INPUT:-
+import math
+n1=int(input("Enter first number "))
+n2=int(input("Enter second number"))
+n3=min(n1,n2)
+n4=max(n1,n2)
+for i in range(1,n4+1):
+    if n3%i==0 and n4%i==0:
+        s=i
+print("GCD is ",s)
+    

@@ -1,0 +1,17 @@
+Name:- Aditya Gadre
+Solution for PP49:
+
+INPUT:
+#triplet ie n=3
+#hence we require three for loops
+s=5 #for simplicity #we can also input sum from user
+arr1=[1,2,3,4,5,6]
+for a in arr1:
+    for b in arr1:
+            for c in arr1:
+                    if(a+b+c==s):
+                        print(a)
+                        print(b)
+                        print(c)
+                        print("--------")
+

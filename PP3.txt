@@ -1,0 +1,13 @@
+Name:Aditya Gadre
+Practice Problem 3: Solution:- PP3
+
+
+INPUT:
+n=int(input("Enter a number"))
+s=str(n)
+st=""
+l=len(s)
+for i in range(l-1,-1,-1):
+    st+=s[i]
+v=int(st)
+print(v)

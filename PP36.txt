@@ -1,0 +1,28 @@
+Name:- Aditya Gadre
+Solution for PP36:
+
+
+INPUT:
+k=0
+def f7(st):
+    global k
+    if(k<len(st)):
+        if(st[k]=="x"):
+            st.pop(k)
+            k=k+1
+        return f7(st)
+        
+    else:
+        d=""
+        for j in st:
+            d+=j
+            
+        return d
+        
+lis2=[]
+s=input("Enter the string")
+for h in s:
+    lis2.append(h)
+
+s=f7(lis2)
+print(s)
