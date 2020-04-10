@@ -1,0 +1,47 @@
+Combined Project 1:- Hardware 
+BWM:- Basic Working Module:-
+Our first hardware project will be a very simple one.
+Its a construction of remote control car:-
+Kit Provision:- Aditya Gadre
+Kit 2020 Development Department - All(As possible)
+We will need to improve our contact and if possible meet for discussion
+The car will consist of :-
+A metal Chasis
+An IR Director
+Four Motors
+Four-Five (9V-12V)Battery's
+Connecting Wires
+------------------------------------------------------
+This will be the Basic model Later on the following changes will be made:
+1)Replacing the Dry cells with rechargable cells and adding a charging slot
+2)Adding Solar Panel To the circuit
+3)Introducing Light Sensor
+
+
+Further Progarms are to be decided.
+	-Aditya Gadre.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
